@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    font-size: large;
+}
+#title{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.75em;
+    margin: 40px
+    
+    
+    
+}
+.container{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 40px;
+        gap: 40px;
+    
+}
+section{
+    border: 1.5px solid black;
+    background-color: rgb(153, 151, 151);
+}
+
+
+p{
+    padding: 10px 40px;
+}
+.menu{
+    
+    border-bottom: 1.5px solid black;
+    border-left: 1.5px solid black;
+    display: inline;
+    float: right;
+    padding: 3px 18px;
+    font-size: 1.25em
+}
+#chicken{
+    background-color: rgb(216, 143, 168);
+}
+#beef{
+    background-color: rgb(190, 110, 81);
+    color: white;
+
+}
+#sushi{
+    background-color: rgb(187, 187, 111);
+}
+
+@media(min-width:992px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        
+    
+    }
+}
+@media(max-width:767px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        
+    
+    
+    }
+}
+@media(min-width:767px) and (max-width:991px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    
+        
+    
+    }
+}
